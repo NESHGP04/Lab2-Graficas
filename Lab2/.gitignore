@@ -1,0 +1,33 @@
+# === Rust ===
+/target
+**/*.rs.bk
+**/*.rs~
+Cargo.lock
+
+# === IDEs / Editors ===
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (CLion, IntelliJ, etc.)
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# === Raylib generated files ===
+*.png
+*.bmp
+*.jpg
+*.tga
+
+# === Logs / temp files ===
+*.log
+*.tmp
+*.swp
+*.swo
+
+# === Rust analyzer ===
+/rust-project.json
