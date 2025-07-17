@@ -61,7 +61,7 @@ fn main() {
 
         // Dibuja usando Raylib
         let mut d = rl.begin_drawing(&thread);
-        d.clear_background(Color::BLACK);
+        d.clear_background(Color::WHITE);
         draw_grid(&mut d, print_area, cell_size, &grid);
 
         d.draw_text(
@@ -69,7 +69,7 @@ fn main() {
             10,
             10,
             20,
-            Color::GREEN,
+            Color::BLACK,
         );
 
         thread::sleep(time::Duration::from_millis(100)); // Mantiene el ritmo
@@ -87,7 +87,7 @@ fn draw_grid(d: &mut RaylibDrawHandle, print_area: i32, cell_size: i32, grid: &H
                     y * cell_size,
                     cell_size,
                     cell_size,
-                    Color::WHITE,
+                    Color::new(148, 212, 195, 255),
                 );
             }
         }
